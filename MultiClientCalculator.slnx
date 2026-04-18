@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MultiClientCalculatorClient/MultiClientCalculatorClient.csproj" />
+  <Project Path="MultiClientCalculatorServer/MultiClientCalculatorServer.csproj" />
+</Solution>
