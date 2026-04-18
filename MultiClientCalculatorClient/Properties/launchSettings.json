@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MultiClientCalculatorClient": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
