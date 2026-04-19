@@ -8,8 +8,8 @@ HOST = "0.0.0.0"
 PORT = 9999
 BUFFER_SIZE = 4096
 
-TEMP_FILE = "temp_en.txt"
-TRANSLATED_FILE = "translated.txt"
+UPLOAD_DIR = "uploads"
+DOWNLOAD_DIR = "downloads"
 
 
 # ================= AI TRANSLATE =================
