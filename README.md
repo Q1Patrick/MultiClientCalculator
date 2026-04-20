@@ -95,7 +95,8 @@ TranslateServer/
     └── README.md
 ---
 
-##  Yêu cầu cài đặt
+##
+Yêu cầu cài đặt
 ```
 ### Server (Python)
 | Yêu cầu | Phiên bản |
