@@ -103,7 +103,8 @@ TranslateServer/
 | Python | 3.10+ |
 | deep-translator | 1.11.4+ |
 
-```bash
+```
+bash
 pip install -r Server/requirements.txt
 ```
 
