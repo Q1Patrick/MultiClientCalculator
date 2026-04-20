@@ -93,11 +93,11 @@ TranslateServer/
     │   └── USER_GUIDE.md
     │
     └── README.md
----
 
+```
 ##
 Yêu cầu cài đặt
-```
+
 ### Server (Python)
 | Yêu cầu | Phiên bản |
 |---------|-----------|
@@ -106,7 +106,6 @@ Yêu cầu cài đặt
 ```
 bash
 pip install -r Server/requirements.txt
-
 ```
 ### Client (Java)
 | Yêu cầu   | Phiên bản |
@@ -116,13 +115,10 @@ pip install -r Server/requirements.txt
 
 Tải Java tại: https://www.oracle.com/java/technologies/downloads/
 ```
----
-
 ##  Hướng dẫn chạy
-
 ### Bước 1 — Chạy Server
 
-```bash
+bash
 cd TranslateProject
 cd server
 python server.py
