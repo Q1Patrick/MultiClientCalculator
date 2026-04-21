@@ -10,7 +10,7 @@
 |     Họ tên        |     MSSV      |                     Vai trò                           |
 |-------------------|---------------|-------------------------------------------------------|
 |Châu Thành Phát    | 091206011060  | Server (Python) — TCP Server, tích hợp AI, xử lý file |
-|Đào Duy Quân       | 092206002937  | Java (Client)  —  Gửi/nhận file qua TCP               |
+|Đào Duy Quân       | 092206002937  | Java Swing (Client)  —  Gửi/nhận file qua TCP               |
 
 ---
 
@@ -19,7 +19,7 @@
 Xây dựng hệ thống dịch văn bản qua giao thức **TCP Socket** theo mô hình **Client – Server**, trong đó:
 
 - **Server** viết bằng **Python** — nhận file văn bản từ client, dịch nội dung sang tiếng Việt bằng AI, trả kết quả về
-- **Client** viết bằng **Client/Java** — giao diện người dùng, cho phép chọn file, gửi lên server và nhận file đã dịch
+- **Client** viết bằng **Client/Java Swing** — giao diện người dùng, cho phép chọn file, gửi lên server và nhận file đã dịch
 
 ---
 
@@ -27,7 +27,7 @@ Xây dựng hệ thống dịch văn bản qua giao thức **TCP Socket** theo m
 
 ### 3.1 Thiết lập kết nối TCP
 - Server Python lắng nghe kết nối từ Client trên địa chỉ IP và port xác định
-- Client Java kết nối đến Server thông qua `TcpClient`
+- Client Java Swing kết nối đến Server thông qua `TcpClient`
 - Sử dụng giao thức **TCP (SOCK_STREAM)** đảm bảo truyền dữ liệu tin cậy, đúng thứ tự, không mất gói
 
 ### 3.2 Gửi và nhận dữ liệu
@@ -178,7 +178,7 @@ TCP là stream protocol — `recv()` không đảm bảo trả đủ dữ liệu
 
 ```
 ┌──────────────────┐         TCP :9999           ┌──────────────────┐
-│   Java           │ ──── [header][file] ──────► │  Python Server   │
+│   Java Swing     │ ──── [header][file] ──────► │  Python Server   │
 │     Client       │                             │                  │
 │                  │ ◄─── [header][dịch] ──────  │ + deep-translator│
 └──────────────────┘                             └──────────────────┘
