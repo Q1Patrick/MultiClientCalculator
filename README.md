@@ -5,7 +5,7 @@
 
 ---
 
-##  Thành viên nhóm
+## Thành viên nhóm
 
 |     Họ tên        |     MSSV      |                     Vai trò                           |
 |-------------------|---------------|-------------------------------------------------------|
@@ -19,7 +19,7 @@
 Xây dựng hệ thống dịch văn bản qua giao thức **TCP Socket** theo mô hình **Client – Server**, trong đó:
 
 - **Server** viết bằng **Python** — nhận file văn bản từ client, dịch nội dung sang tiếng Việt bằng AI, trả kết quả về
-- **Client** viết bằng **Client/Java Swing** — giao diện người dùng, cho phép chọn file, gửi lên server và nhận file đã dịch
+- **Client** viết bằng **Java Swing** — giao diện người dùng, cho phép chọn file, gửi lên server và nhận file đã dịch
 
 ---
 
@@ -27,7 +27,7 @@ Xây dựng hệ thống dịch văn bản qua giao thức **TCP Socket** theo m
 
 ### 3.1 Thiết lập kết nối TCP
 - Server Python lắng nghe kết nối từ Client trên địa chỉ IP và port xác định
-- Client Java Swing kết nối đến Server thông qua `TcpClient`
+- Client Java Swing kết nối đến Server thông qua Socket
 - Sử dụng giao thức **TCP (SOCK_STREAM)** đảm bảo truyền dữ liệu tin cậy, đúng thứ tự, không mất gói
 
 ### 3.2 Gửi và nhận dữ liệu
@@ -95,8 +95,7 @@ TranslateServer/
     └── README.md
 
 ```
-##
-Yêu cầu cài đặt
+## Yêu cầu cài đặt
 
 ### Server (Python)
 | Yêu cầu | Phiên bản |
@@ -104,7 +103,7 @@ Yêu cầu cài đặt
 | Python | 3.10+ |
 | deep-translator | 1.11.4+ |
 ```
-bash
+
 pip install deep-translator
 macOS
 pip3 install deep-translator
@@ -133,7 +132,7 @@ Server chạy tại 0.0.0.0:9999
 
 ### Bước 2 — Chạy Client
 
-Mở thư mục `Client/` bằng VSCode → nhấn **F5**
+Mở thư mục `client/` bằng VSCode → nhấn **F5**
 
 Hoặc chạy bằng terminal:
 ```bash
