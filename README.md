@@ -27,7 +27,7 @@ Xây dựng hệ thống dịch văn bản qua giao thức **TCP Socket** theo m
 
 ### 3.1 Thiết lập kết nối TCP
 - Server Python lắng nghe kết nối từ Client trên địa chỉ IP và port xác định
-- Client C# kết nối đến Server thông qua `TcpClient`
+- Client Java kết nối đến Server thông qua `TcpClient`
 - Sử dụng giao thức **TCP (SOCK_STREAM)** đảm bảo truyền dữ liệu tin cậy, đúng thứ tự, không mất gói
 
 ### 3.2 Gửi và nhận dữ liệu
