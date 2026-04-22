@@ -77,7 +77,7 @@ TranslateServer/
     │       └── README.md
     │
     ├── server/
-    │   ├── data/
+    │   └── data/
     │       ├── input/
     │       └── output/
     │   ├── server.py
