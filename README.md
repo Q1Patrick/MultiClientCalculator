@@ -77,15 +77,14 @@ TranslateServer/
     │       └── README.md
     │
     ├── server/
+    │   ├── data/
+    │       ├── input/
+    │       └── output/
     │   ├── server.py
     │   ├── handler.py
     │   ├── network.py
     │   ├── translator.py
     │   └── config.py
-    │
-    ├── data/
-    │   ├── input/
-    │   └── output/
     │
     ├── docs/
     │   ├── API.md
