@@ -102,7 +102,7 @@ TranslateServer/
 | Python | 3.10+ |
 | deep-translator | 1.11.4+ |
 ```
-
+pip3 install python-docx
 pip install deep-translator
 macOS
 pip3 install deep-translator
